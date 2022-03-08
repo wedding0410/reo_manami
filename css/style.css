@@ -9,7 +9,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	color: #666;	/*全体の文字色*/
+	color: #000;	/*全体の文字色*/
 	/*background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);*/ /*背景色、背景画像の読み込み*/
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 14px;	/*文字サイズ*/
@@ -26,7 +26,7 @@ iframe {width: 100%;}
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
 a {
-	color: #666;	/*リンクテキストの色*/
+	color: #000;	/*リンクテキストの色*/
 }
 a:hover {
 	color: #797979;			/*マウスオン時の文字色（全体）*/
@@ -201,7 +201,7 @@ nav#menubar-s ul li a:hover span {
 /*ボックス内の段落タグ設定*/
 #main .list p {
 	padding: 0px;
-	color: #666;		/*文字色*/
+	color: #000;		/*文字色*/
 	font-size: 12px;	/*文字サイズ*/
 }
 /*ボックス内のh4タグ設定*/
