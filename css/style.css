@@ -130,7 +130,7 @@ nav#menubar-s ul li a:hover span {
 	background-size: 50px 50px;
 	background-position: 0 0, 25px 25px;
   }
-		}
+		
 		h2:before{
 			background-color: #fff; /* 切り替わる色1 */
 			content: '';
