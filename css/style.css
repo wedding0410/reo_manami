@@ -122,15 +122,14 @@ nav#menubar-s ul li a:hover span {
 
 
 #main h2 {
-	    font-family: "Courgette";
-			margin-top: 5px;
-			margin-bottom: 5px;
-    	font-size:20px;
-			/*background-color: #ef858c; /* 背景色 */
-			color: #fff; /* 文字色 */
-			overflow: hidden;
-			padding: 3px;  /* 余白 */
-			position: relative;
+	font-size: 2.5ch;
+	padding: 1rem 1.5rem;
+	color: #fff;
+	background: #140353;
+	background-image: radial-gradient(#053055 13%, transparent 13%), radial-gradient(#023763 13%, transparent 13%);
+	background-size: 50px 50px;
+	background-position: 0 0, 25px 25px;
+  }
 		}
 		h2:before{
 			background-color: #fff; /* 切り替わる色1 */
