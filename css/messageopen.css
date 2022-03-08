@@ -21,7 +21,7 @@
   position:relative;
 }
 .content-demo{
-  background:url("frame.jpg") center / cover no-repeat;
+  background:url("https://wedding0410.github.io/reo_manami/css/frame.jpg") center / cover no-repeat;
 }
 .popup-show {
   display: flex;
