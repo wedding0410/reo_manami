@@ -1,0 +1,9 @@
+.swiper-container {
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  overflow: hidden;
+}
+.swiper-slide{
+  width: 80%;
+}
