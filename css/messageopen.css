@@ -21,7 +21,7 @@
   position:relative;
 }
 .content-demo{
-  background:url("images/reika_profile.png") center / cover no-repeat;
+  background:url("frame.jpg") center / cover no-repeat;
 }
 .popup-show {
   display: flex;
