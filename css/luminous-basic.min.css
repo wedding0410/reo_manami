@@ -30,13 +30,15 @@
         display:flex;overflow:auto;-webkit-overflow-scrolling:touch
     }
 
-    @media screen and (max-width: 460px) {
-        .lum-lightbox-inner img {
-          max-width: 160vw !important;  /* 軽くスワイプで左端から右端まで動かせる量 */
-          max-height: 85vh !important;  /* 上下に適度に余白 */
-        }
-      }
+  
 .lum-lightbox-caption{width:100%;position:absolute;bottom:0}
 .lum-lightbox-position-helper{margin:auto}
 
 .lum-lightbox-inner img{max-width:none;max-height:none}}
+
+@media screen and (max-width: 460px) {
+    .lum-lightbox-inner img {
+        max-width: 180vw !important;/* スワイプ範囲含む横幅調整 */
+        max-height: 100vh !important;/* 上下余白調整 */
+    }
+  }
