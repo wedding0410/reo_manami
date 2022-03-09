@@ -44,6 +44,8 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*メニュー１個あたりの設定*/
 nav#menubar ul li,
+
+
 nav#menubar-s ul li {
 	float: left;	/*メニューを左側に回り込み*/
 	text-align: center;	/*内容をセンタリング*/
@@ -51,13 +53,16 @@ nav#menubar-s ul li {
 	margin-left: 1.5%;	/*メニュー同士の隙間*/
 	font-size: 16px;		/*文字サイズ*/
 }
+nav#menubar-m{
+	position: relative;
+	bottom: 0px;	/*headerブロックの下から0pxの場所に配置。*/
+	left: 15%;		/*headerブロックの左から3%の場所に配置。*/
+	width: 100%;		/*幅。上で3%使っているので、右にも同じ3%を残すとすると、残りが94%。*/
+    }
 nav#menubar-m ul li {
-	z-index:10000;
-	float: left;	/*メニューを左側に回り込み*/
-	text-align: center;	/*内容をセンタリング*/
-	width: 35%;		/*メニュー幅*/
-	margin-left: 10%;	/*メニュー同士の隙間*/
-	font-size: 16px;		/*文字サイズ*/
+	float: left;
+    width: 35%;	/*メニューの幅*/
+
 }
 
 
@@ -84,6 +89,8 @@ nav#menubar-m ul li img {
 	margin-bottom: 10px;	/*写真とメニューテキストの間にとるスペース*/
 }
 
+
+
 /*各メニューの写真部分のマウスオン時の設定*/
 nav#menubar ul li:hover img,
 nav#menubar-s ul li:hover img {
@@ -99,16 +106,16 @@ nav#menubar-s ul li a {
 }
 nav#menubar-m ul li a {
 	text-decoration: none;
-	color: #FFF;	/*文字色*/
+	color: rgb(7, 7, 7);	/*文字色*/
 }
 
 nav#menubar ul li a span,
 nav#menubar-s ul li a span {
 	display: block;
 	word-wrap: break-word;
-	border-radius: 100px;	/*角丸の設定。大き目に設定しておけばOK。*/
+	border-radius: 20px;	/*角丸の設定。大き目に設定しておけばOK。*/
 	line-height: 1;			/*高さ*/
-	background: rgba(0,0,0,0.3);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
+	/*background: rgba(0,0,0,0.3);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
 	margin-bottom: 30px;	/*下のコンテンツブロックとの余白*/
 	padding: 4px;
 }
@@ -117,9 +124,19 @@ nav#menubar-m ul li span {
 	word-wrap: break-word;
 	border-radius: 100px;	/*角丸の設定。大き目に設定しておけばOK。*/
 	line-height: 1;			/*高さ*/
-	background: rgba(180, 178, 178, 0.3);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
+	background: rgba(187, 184, 184, 0.3);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
 	margin-bottom: 30px;	/*下のコンテンツブロックとの余白*/
 	padding: 4px;
+}
+nav#menubar-m ul li a span {
+	display: block;
+	word-wrap: break-word;
+	border-radius: 0px;	/*角丸の設定。大き目に設定しておけばOK。*/
+	line-height: 1;			/*高さ*/
+	background: rgb(253, 237, 4);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
+	margin-bottom: 30px;	/*下のコンテンツブロックとの余白*/
+	padding: 4px;
+
 }
 nav#menubar-p ul li a span {
 	display: block;
@@ -183,6 +200,8 @@ nav#menubar-s ul li a:hover span {
 
 /*mainコンテンツのh3タグの設定*/
 #main 	h3 {
+	font-size: 2ch;
+
 		position: relative;
 		padding: 1em 2em;
 		text-align: center;
