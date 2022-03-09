@@ -52,10 +52,11 @@ nav#menubar-s ul li {
 	font-size: 16px;		/*文字サイズ*/
 }
 nav#menubar-m ul li {
+	z-index:10000;
 	float: left;	/*メニューを左側に回り込み*/
 	text-align: center;	/*内容をセンタリング*/
-	width: 15%;		/*メニュー幅*/
-	margin-left: 1.5%;	/*メニュー同士の隙間*/
+	width: 35%;		/*メニュー幅*/
+	margin-left: 10%;	/*メニュー同士の隙間*/
 	font-size: 16px;		/*文字サイズ*/
 }
 
@@ -74,6 +75,7 @@ nav#menubar-s ul li img {
 nav#menubar-m ul li img {
 	width: 90%;		/*上の15%の幅に対しての写真幅*/
 	height: auto;
+	z-index:10000;
 	-webkit-box-shadow: 1px 2px 10px rgba(0,0,0,0.3);	/*影の設定。右へ、下へ、ぼかし幅。rgba以降の3つの数字がRGBでの色（この場合は黒）。最後の小数点の数字が透明度30%の事。*/
 	box-shadow: 1px 2px 10px rgba(0,0,0,0.3);			/*同上*/
 	border: 7px solid #FFF;	/*枠線の幅、線種、色*/
@@ -485,6 +487,14 @@ nav#menubar-s ul li {
 	float: left;		/*メニューを左側に回り込み*/
 	text-align: center;	/*内容をセンタリング*/
 	width: 28%;			/*メニュー幅*/
+	margin-left: 4%;	/*メニュー同士の隙間*/
+	font-size: 12px;	/*文字サイズ*/
+}
+nav#menubar-m ul li {
+	float: left;		/*メニューを左側に回り込み*/
+	text-align: center;	/*内容をセンタリング*/
+	width: 28%;	
+	z-index: 10000;		/*メニュー幅*/
 	margin-left: 4%;	/*メニュー同士の隙間*/
 	font-size: 12px;	/*文字サイズ*/
 }
