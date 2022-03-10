@@ -99,13 +99,7 @@ nav#menubar-m ul li img {
 		/*画面幅800px以下の設定
 		------------------------------------------------------------------------------------------------------------------------------------------------------*/
 		@media screen and (max-width:800px){
-			nav#menubar-s ul li {
-				float: left;	/*メニューを左側に回り込み*/
-				text-align: center;	/*内容をセンタリング*/
-				width: 15%;		/*メニュー幅*/
-				margin-left: 1.5%;	/*メニュー同士の隙間*/
-				font-size: 16px;		/*文字サイズ*/
-			}
+		
 		
 			nav#menubar-m ul li {
 				display: inline-block; /* ここがポイント */
@@ -187,9 +181,7 @@ nav#menubar-s ul li a:hover span {
 
 
 /*小さい端末用(画面幅800px以下)メニューを表示させない*/
-#menubar-s {
-	display: none;
-}
+
 /*800px以下のメニュー見出し（MENU）を表示させない*/
 #menubar_hdr {
 	display: none;
