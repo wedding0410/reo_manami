@@ -46,26 +46,30 @@ a:hover {
 nav#menubar ul li,
 
 
+
+
+		---------------------------------------------------------------------------*/
+/*小さい端末用(画面幅800px以下)メニューを非表示から表示に切り替える*/
+#menubar-s {
+	display: block;
+}
+/*メニュー１個あたりの設定*/
 nav#menubar-s ul li {
-	float: left;	/*メニューを左側に回り込み*/
+	float: left;		/*メニューを左側に回り込み*/
 	text-align: center;	/*内容をセンタリング*/
-	width: 15%;		/*メニュー幅*/
-	margin-left: 1.5%;	/*メニュー同士の隙間*/
-	font-size: 16px;		/*文字サイズ*/
+	width: 28%;			/*メニュー幅*/
+	margin-left: 4%;	/*メニュー同士の隙間*/
+	font-size: 12px;	/*文字サイズ*/
 }
-nav#menubar-m{
-	position: relative;
-	bottom: 0px;	/*headerブロックの下から0pxの場所に配置。*/
-	left: 15%;		/*headerブロックの左から3%の場所に配置。*/
-	width: 100%;		/*幅。上で3%使っているので、右にも同じ3%を残すとすると、残りが94%。*/
-    }
 nav#menubar-m ul li {
-	float: left;
-    width: 35%;	/*メニューの幅*/
-
+	float: left;		/*メニューを左側に回り込み*/
+	text-align: center;	/*内容をセンタリング*/
+	width: 30%;	
+	z-index: 10000;		/*メニュー幅*/
+	margin-left: 4%;	/*メニュー同士の隙間*/
+	font-size: 12px;	/*文字サイズ*/
+	margin-left: 11%;
 }
-
-
 /*各メニューの写真部分の設定*/
 nav#menubar ul li img,
 nav#menubar-s ul li img {
@@ -89,6 +93,28 @@ nav#menubar-m ul li img {
 	margin-bottom: 10px;	/*写真とメニューテキストの間にとるスペース*/
 }
 
+
+		/*画面幅800px以下の設定
+		------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		@media screen and (max-width:800px){
+			nav#menubar-s ul li {
+				float: left;	/*メニューを左側に回り込み*/
+				text-align: center;	/*内容をセンタリング*/
+				width: 15%;		/*メニュー幅*/
+				margin-left: 1.5%;	/*メニュー同士の隙間*/
+				font-size: 16px;		/*文字サイズ*/
+			}
+		
+			nav#menubar-m ul li {
+				float: left;		/*メニューを左側に回り込み*/
+				text-align: center;	/*内容をセンタリング*/
+				width: 30%;	
+				z-index: 10000;		/*メニュー幅*/
+				margin-left: 10%;	/*メニュー同士の隙間*/
+				font-size: 12px;	/*文字サイズ*/
+
+			}
+		}
 
 
 /*各メニューの写真部分のマウスオン時の設定*/
@@ -479,31 +505,8 @@ header #logo {
 }
 
 /*上部のメインメニュー
----------------------------------------------------------------------------*/
-/*小さい端末用(画面幅800px以下)メニューを非表示から表示に切り替える*/
-#menubar-s {
-	display: block;
-}
-/*メニュー１個あたりの設定*/
-nav#menubar-s ul li {
-	float: left;		/*メニューを左側に回り込み*/
-	text-align: center;	/*内容をセンタリング*/
-	width: 28%;			/*メニュー幅*/
-	margin-left: 4%;	/*メニュー同士の隙間*/
-	font-size: 12px;	/*文字サイズ*/
-}
-nav#menubar-m ul li {
-	float: left;		/*メニューを左側に回り込み*/
-	text-align: center;	/*内容をセンタリング*/
-	width: 28%;	
-	z-index: 10000;		/*メニュー幅*/
-	margin-left: 4%;	/*メニュー同士の隙間*/
-	font-size: 12px;	/*文字サイズ*/
-}
-/*大きな端末用(画面幅801px以上)メニューを非表示にする*/
-#menubar {
-	display: block;
-}
+
+
 
 /*800px以下のメニュー見出し（MENU）
 ---------------------------------------------------------------------------*/
@@ -518,15 +521,6 @@ nav#menubar-m ul li {
 	text-align: center;
 }
 /*メニューopen時のアイコン（アイコンはマイナス表示中）と背景色の設定。480px以下の設定の「更新情報・お知らせ」ブロックと合わせるとOK。*/
-#menubar_hdr.open {
-	background: url(../images/btn_minus.png) no-repeat right center, -webkit-linear-gradient(#a2a2a2, #797979);
-	background: url(../images/btn_minus.png) no-repeat right center, linear-gradient(#a2a2a2, #797979);
-}
-/*メニューclose時のアイコン（アイコンはプラス表示中）と背景色の設定。480px以下の設定の「更新情報・お知らせ」ブロックと合わせるとOK。*/
-#menubar_hdr.close {
-	background: url(../images/btn_plus.png) no-repeat right center, -webkit-linear-gradient(#a2a2a2, #797979);
-	background: url(../images/btn_plus.png) no-repeat right center, linear-gradient(#a2a2a2, #797979);
-}
 
 /*menu.html内のメニューブロック
 ---------------------------------------------------------------------------*/
