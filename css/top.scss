@@ -12,103 +12,116 @@
     padding: 0;
   }
   
-  .swiper-container {
-    overflow: hidden;
-    width: 80%;
-    height: 60vh;
-    // display:inline-block;
-    // vertical-align:top;
-    float:left;
-    transition:opacity .6s ease, transform .3s ease;
-    &.nav-slider{
-      overflow: hidden;
-      width:20%;
-      padding-left:5px;
-      .swiper-slide{
-        cursor:pointer;
-        opacity:.4;
-        transition:opacity .3s ease;
-        &.swiper-slide-active{
-          opacity:1;
-        }
-        .content{
-          width:100vh;
-          .title{
-            font-size:20px;
+
+  @media screen and (max-width:600px) {
+    /*　スマホサイズ用　画面サイズが600px未満はここを読み込む　*/
+ 
+    .swiper-container {
+      /*overflow: hidden; ★*/
+      width: 80%;
+      height: 60vh;
+      // display:inline-block;
+      // vertical-align:top;
+      float:left;
+      transition:opacity .6s ease, transform .3s ease;
+      &.nav-slider{
+        overflow: hidden;
+        width:20%;
+        padding-left:5px;
+        .swiper-slide{
+          cursor:pointer;
+          opacity:.4;
+          transition:opacity .3s ease;
+          &.swiper-slide-active{
+            opacity:1;
+          }
+          .content{
+            overflow: visible;
+            width:100vh;
+            z-index: 1000;
+            .title{
+              font-size:20px;
+            }
           }
         }
       }
-    }
-    &:hover{
-      .swiper-button-prev,
-      .swiper-button-next{
-        transform:translateX(0);
-        opacity:1;
-        visibility:visible;
+      &:hover{
+        .swiper-button-prev,
+        .swiper-button-next{
+          transform:translateX(0);
+          opacity:1;
+          visibility:visible;
+        }
+      }
+      &.loading{
+        opacity:0;
+        visibility:hidden;
       }
     }
-    &.loading{
+    .swiper-wrapper{
+      
+    
+    }
+    .swiper-slide{
+      /*overflow: hidden;*/
+      @extend %backface_visibility_hidden;
+      .slide-bgimg{
+        overflow: hidden;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-position:center;
+        background-size:cover;
+      }
+      .entity-img{
+        overflow: hidden;
+        display:none;
+      }
+      .content{
+        overflow: visible;
+        position:absolute;
+        top:40%;
+        left:0;
+        width:50%;
+        padding-left:5%;
+        color:#fff;
+        z-index: 1000;
+        .title{
+          overflow: visible;
+          font-size:1.3em;
+          font-weight:bold;
+          margin-bottom:30px;
+          z-index: 1000;
+        }
+        .caption{
+          overflow: visible;
+          display:block;
+          font-size:13px;
+          line-height:1.4;
+          z-index: 1000;
+          // transform:translateX(50px);
+          // // opacity:0;
+          // transition:opacity .3s ease, transform .7s ease;
+          // &.show{
+          //   transform:translateX(0);
+          //   opacity:1;
+          // }
+        }
+      }
+    }
+    [class^="swiper-button-"]{
+      width:44px;
       opacity:0;
       visibility:hidden;
+      @extend %transition_all_03s;
     }
-  }
-  .swiper-wrapper{
-    
-  
-  }
-  .swiper-slide{
-    overflow: hidden;
-    @extend %backface_visibility_hidden;
-    .slide-bgimg{
-      overflow: hidden;
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      background-position:center;
-      background-size:cover;
+    .swiper-button-prev{
+      transform:translateX(50px);
     }
-    .entity-img{
-      overflow: hidden;
-      display:none;
+    .swiper-button-next{
+      transform:translateX(-50px);
     }
-    .content{
-      overflow: hidden;
-      position:absolute;
-      top:40%;
-      left:0;
-      width:50%;
-      padding-left:5%;
-      color:#fff;
-      .title{
-        font-size:1.3em;
-        font-weight:bold;
-        margin-bottom:30px;
-      }
-      .caption{
-        display:block;
-        font-size:13px;
-        line-height:1.4;
-        // transform:translateX(50px);
-        // // opacity:0;
-        // transition:opacity .3s ease, transform .7s ease;
-        // &.show{
-        //   transform:translateX(0);
-        //   opacity:1;
-        // }
-      }
-    }
-  }
-  [class^="swiper-button-"]{
-    width:44px;
-    opacity:0;
-    visibility:hidden;
-    @extend %transition_all_03s;
-  }
-  .swiper-button-prev{
-    transform:translateX(50px);
-  }
-  .swiper-button-next{
-    transform:translateX(-50px);
-  }
+
+}
