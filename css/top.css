@@ -18,115 +18,237 @@
 
 
 
-.swiper-container {
-  overflow: hidden;
-  /*★*/
-  width: 80%;
-  height: 60vh;
-  float: left;
-  -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
-  transition: opacity .6s ease, -webkit-transform .3s ease;
-  transition: opacity .6s ease, transform .3s ease;
-  transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
-}
+  /*スマホ用画面*/
+  .swiper-container {
+    overflow: hidden;
+    /*★*/
+    width: 80%;
+    height: 40vh;
+    float: left;
+    -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
+    transition: opacity .6s ease, -webkit-transform .3s ease;
+    transition: opacity .6s ease, transform .3s ease;
+    transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+  }
 
-.swiper-container.nav-slider {
-  overflow: hidden;
-  width: 20%;
-  padding-left: 5px;
-}
+  .swiper-container.nav-slider {
+    overflow: hidden;
+    width: 20%;
+    padding-left: 5px;
+  }
 
-.swiper-container.nav-slider .swiper-slide {
-  cursor: pointer;
-  opacity: .4;
-  -webkit-transition: opacity .3s ease;
-  transition: opacity .3s ease;
-}
+  .swiper-container.nav-slider .swiper-slide {
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+  }
 
-.swiper-container.nav-slider .swiper-slide.swiper-slide-active {
-  opacity: 1;
-}
+  .swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+    opacity: 1;
+  }
 
-.swiper-container.nav-slider .swiper-slide .content {
-  overflow: visible;
-  width: 100vh;
-}
+  .swiper-container.nav-slider .swiper-slide .content {
+    overflow: visible;
+    width: 100vh;
+  }
 
-.swiper-container.nav-slider .swiper-slide .content .title {
-  font-size: 20px;
-}
+  .swiper-container.nav-slider .swiper-slide .content .title {
+    font-size: 20px;
+  }
 
-.swiper-container:hover .swiper-button-prev,
-.swiper-container:hover .swiper-button-next {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
-}
+  .swiper-container:hover .swiper-button-prev,
+  .swiper-container:hover .swiper-button-next {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
 
-.swiper-container.loading {
-  opacity: 0;
-  visibility: hidden;
-}
+  .swiper-container.loading {
+    opacity: 0;
+    visibility: hidden;
+  }
 
-.swiper-slide {
-  overflow: hidden;
-}
+  .swiper-slide {
+    overflow: hidden;
+  }
 
-.swiper-slide .slide-bgimg {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-}
+  .swiper-slide .slide-bgimg {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
 
-.swiper-slide .entity-img {
-  overflow: hidden;
-  display: none;
-}
+  .swiper-slide .entity-img {
+    overflow: hidden;
+    display: none;
+  }
 
-.swiper-slide .content {
-  overflow: visible;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 50%;
-  padding-left: 5%;
-  color: #fff;
-  z-index: 1000;
-}
+  .swiper-slide .content {
+    overflow: visible;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 50%;
+    padding-left: 5%;
+    color: #fff;
+    z-index: 1000;
+  }
 
-.swiper-slide .content .title {
-  overflow: visible;
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
+  .swiper-slide .content .title {
+    overflow: visible;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
 
-.swiper-slide .content .caption {
-  overflow: visible;
-  display: block;
-  font-size: 13px;
-  line-height: 1.4;
-}
+  .swiper-slide .content .caption {
+    overflow: visible;
+    display: block;
+    font-size: 13px;
+    line-height: 1.4;
+  }
 
-[class^="swiper-button-"] {
-  width: 44px;
-  opacity: 0;
-  visibility: hidden;
-}
+  [class^="swiper-button-"] {
+    width: 44px;
+    opacity: 0;
+    visibility: hidden;
+  }
 
-.swiper-button-prev {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-}
+  .swiper-button-prev {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
 
-.swiper-button-next {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-}
-/*# sourceMappingURL=top.css.map */
+  .swiper-button-next {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+
+
+
+@media screen and (min-width:700px){
+    /*PC用画面*/
+
+    .swiper-container {
+      overflow: hidden;
+      /*★*/
+      width: 80%;
+      height: 60vh;
+      float: left;
+      -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
+      transition: opacity .6s ease, -webkit-transform .3s ease;
+      transition: opacity .6s ease, transform .3s ease;
+      transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+    }
+
+    .swiper-container.nav-slider {
+      overflow: hidden;
+      width: 20%;
+      padding-left: 5px;
+    }
+
+    .swiper-container.nav-slider .swiper-slide {
+      cursor: pointer;
+      opacity: .4;
+      -webkit-transition: opacity .3s ease;
+      transition: opacity .3s ease;
+    }
+
+    .swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+      opacity: 1;
+    }
+
+    .swiper-container.nav-slider .swiper-slide .content {
+      overflow: visible;
+      width: 100vh;
+    }
+
+    .swiper-container.nav-slider .swiper-slide .content .title {
+      font-size: 20px;
+    }
+
+    .swiper-container:hover .swiper-button-prev,
+    .swiper-container:hover .swiper-button-next {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .swiper-container.loading {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .swiper-slide {
+      overflow: hidden;
+    }
+
+    .swiper-slide .slide-bgimg {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide .entity-img {
+      overflow: hidden;
+      display: none;
+    }
+
+    .swiper-slide .content {
+      overflow: visible;
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 50%;
+      padding-left: 5%;
+      color: #fff;
+      z-index: 1000;
+    }
+
+    .swiper-slide .content .title {
+      overflow: visible;
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .swiper-slide .content .caption {
+      overflow: visible;
+      display: block;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    [class^="swiper-button-"] {
+      width: 44px;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .swiper-button-prev {
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+
+    .swiper-button-next {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+    }
+    /*# sourceMappingURL=top.css.map */
+  }
+
+
+
