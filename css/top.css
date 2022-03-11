@@ -23,7 +23,7 @@
     overflow: hidden;
     /*★*/
     width: 80%;
-    height: 40vh;
+    height: 30vh;
     float: left;
     -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
     transition: opacity .6s ease, -webkit-transform .3s ease;
