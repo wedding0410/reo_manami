@@ -114,11 +114,11 @@
     font-size: 13px;
     line-height: 1.4;
   }
-/*
+
   [class^="swiper-button-"] {
     width: 44px;
     opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 
   .swiper-button-prev {
@@ -130,7 +130,7 @@
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
   }
-*/
+
   
 
 
@@ -232,11 +232,11 @@
       font-size: 13px;
       line-height: 1.4;
     }
-/*
+
     [class^="swiper-button-"] {
       width: 22px;
       opacity: 0;
-      visibility: hidden;
+      display: none;
     }
 
     .swiper-button-prev {
@@ -248,7 +248,7 @@
       -webkit-transform: translateX(-50px);
               transform: translateX(-50px);
     }
-    */
+    
 }
 
 @media screen and (min-width:700px){
