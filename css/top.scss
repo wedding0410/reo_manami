@@ -14,12 +14,13 @@
   
   .swiper-container {
     width: 80%;
-    height: 80vh;
+    height: 60vh;
     // display:inline-block;
     // vertical-align:top;
     float:left;
     transition:opacity .6s ease, transform .3s ease;
     &.nav-slider{
+      overflow: hidden;
       width:20%;
       padding-left:5px;
       .swiper-slide{
@@ -51,6 +52,7 @@
     }
   }
   .swiper-wrapper{
+    
   
   }
   .swiper-slide{
@@ -66,9 +68,11 @@
       background-size:cover;
     }
     .entity-img{
+      overflow: hidden;
       display:none;
     }
     .content{
+      
       position:absolute;
       top:40%;
       left:0;
@@ -76,7 +80,7 @@
       padding-left:5%;
       color:#fff;
       .title{
-        font-size:2.6em;
+        font-size:1.3em;
         font-weight:bold;
         margin-bottom:30px;
       }

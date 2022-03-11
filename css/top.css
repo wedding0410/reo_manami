@@ -17,7 +17,7 @@
 
 .swiper-container {
   width: 80%;
-  height: 80vh;
+  height: 60vh;
   float: left;
   -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
   transition: opacity .6s ease, -webkit-transform .3s ease;
@@ -26,6 +26,7 @@
 }
 
 .swiper-container.nav-slider {
+  overflow: hidden;
   width: 20%;
   padding-left: 5px;
 }
@@ -77,6 +78,7 @@
 }
 
 .swiper-slide .entity-img {
+  overflow: hidden;
   display: none;
 }
 
@@ -90,7 +92,7 @@
 }
 
 .swiper-slide .content .title {
-  font-size: 2.6em;
+  font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 30px;
 }
