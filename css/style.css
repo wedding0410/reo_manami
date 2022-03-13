@@ -89,14 +89,14 @@ nav#menubar-m ul li {
 		
 		 
 			nav#menubar-m ul li {
-				display: inline-block; /* ここがポイント */
+				
+				/*display: inline-block; /* ここがポイント */
 				/*メニューを左側に回り込み*/
 				text-align: center;	/*内容をセンタリング*/
-				width: 40%;	
-				z-index: 10000;		/*メニュー幅*/
-				
-				margin-left: 3.5%;	/*メニュー同士の隙間*/				
+				width: 47%;	
+				margin-left: 0%;	/*メニュー同士の隙間*/				
 				font-size: 12px;	/*文字サイズ*/
+				margin-right: 0%;
 
 			}
 		}
@@ -115,14 +115,14 @@ nav#menubar-s ul li img {
 }
 
 nav#menubar-m ul li img {
-	width: 90%;		/*上の15%の幅に対しての写真幅*/
+	width: 100%;		/*上の15%の幅に対しての写真幅*/
 	height: auto;
 	z-index:10000;
 	-webkit-box-shadow: 1px 2px 10px rgba(0,0,0,0.3);	/*影の設定。右へ、下へ、ぼかし幅。rgba以降の3つの数字がRGBでの色（この場合は黒）。最後の小数点の数字が透明度30%の事。*/
 	box-shadow: 1px 2px 10px rgba(0,0,0,0.3);			/*同上*/
 	border: 1px solid #FFF;	/*枠線の幅、線種、色*/
 	border-radius: 0%;		/*角丸の設定*/
-	margin-bottom: 10px;	/*写真とメニューテキストの間にとるスペース*/
+	margin-bottom: 5px;	/*写真とメニューテキストの間にとるスペース*/
 }
 
 
