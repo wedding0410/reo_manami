@@ -111,7 +111,7 @@ nav#menubar-m ul li img {
 		------------------------------------------------------------------------------------------------------------------------------------------------------*/
 		@media screen and (max-width:700px){
 		
-		
+		 
 			nav#menubar-m ul li {
 				display: inline-block; /* ここがポイント */
 				/*メニューを左側に回り込み*/
@@ -122,6 +122,8 @@ nav#menubar-m ul li img {
     			margin-right: 15px;
     			margin-bottom: 15px;	/*メニュー同士の隙間*/
 				font-size: 12px;	/*文字サイズ*/
+
+
 
 			}
 		}
@@ -235,7 +237,7 @@ nav#menubar-s ul li a:hover span {
 /*mainコンテンツのh3タグの設定*/
 #main 	h3 {
 	font-size: 2.4ch;
-
+	   background-color:rgba(252, 250, 250, 0.9);
 		position: relative;
 		padding: 1em 2em;
 		text-align: center;
@@ -252,8 +254,8 @@ nav#menubar-s ul li a:hover span {
 		left: 0;
 		width: 50px;
 		height: 50px;
-		border-top: 2px solid #000;
-		border-left: 2px solid #000;
+		border-top: 4px solid #000;
+		border-left: 4px solid #000;
 	  }
 	  
 	  h3:before {
@@ -261,8 +263,8 @@ nav#menubar-s ul li a:hover span {
 		bottom: 0;
 		width: 50px;
 		height: 50px;
-		border-right: 2px solid #000;
-		border-bottom: 2px solid #000;
+		border-right: 4px solid #000;
+		border-bottom: 4px solid #000;
 	  }
 /*メインコンテンツのp(段落)タグ設定*/
 #main p {
@@ -312,6 +314,22 @@ nav#menubar-s ul li a:hover span {
 	position: absolute;
 	top: -10px;	/*ボックスに対して上から-10pxの位置に配置*/
 	right: 0px;	/*ボックスに対して右から0pxの位置に配置*/
+}
+
+
+
+
+video {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width:700px){
+video {
+	text-align: center;
+	margin-left: 12.5%;
+	width: 75%;
+	height: 50%;
+  }
 }
 
 /*menu内のページ内メニュー（CMS用）
