@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 460px) {
     .lum-lightbox-inner img {
-        max-width: 100vw !important;/* スワイプ範囲含む横幅調整 */
+        max-width: 90vw !important;/* スワイプ範囲含む横幅調整 */
         max-height: 170vh !important;/* 上下余白調整 */
     }
   }
