@@ -16,11 +16,14 @@
   <meta property="og:description" content="Reo and Manami conguratulation messages" />
 　
   <link rel="stylesheet" href="css/style.css">
-  
+  <link rel="stylesheet" href="css/top.css">
 　<!--<script type="text/javascript" src="js/openclose.js"></script>-->
 
 <link rel="stylesheet" href="css/messageopen.css">
 <link rel="stylesheet" href="css/luminous-basic.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.3/swiper-bundle.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -31,8 +34,108 @@
 
 
 
+        <div class="swiper-container main-slider loading">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top_1.jpg)" data-swiper-parallax-x="50%">
+                <img src="images/top_1.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title">Leo and Manami <br>Happy Wedding</p>
+                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0"></span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top_2.jpg)" data-swiper-parallax-x="50%">
+                <img src="images/top1.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title">Alexis Berry</p>
+                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0">文字入力</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top3.jpg)" data-swiper-parallax-x="50%">
+                <img src="images/top3.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title">BilliePierce</p>
+                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0">文字入力</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top4.jpg)" data-swiper-parallax-x="50%">
+                <img src="images/top4.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title">TrevorCopeland</p>
+                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0">文字入力</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top5.jpg)" data-swiper-parallax-x="50%">
+                <img src="images/top5.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title">BernadetteNewman</p>
+                <span class="caption" data-swiper-parallax-x="30%" data-swiper-parallax-opacity="0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+        
+        <!-- Thumbnail navigation -->
+        <div class="swiper-container nav-slider loading">
+          <div class="swiper-wrapper" role="navigation">
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top_1.jpg)">
+                <img src="images/top_1.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title"></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top_2.jpg)">
+                <img src="images/top_2.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title"></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top3.jpg)">
+                <img src="images/top3.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title"></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top4.jpg)">
+                <img src="images/top4.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title"></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="slide-bgimg" style="background-image:url(images/top5.jpg)">
+                <img src="images/top5.jpg" class="entity-img" />
+              </figure>
+              <div class="content">
+                <p class="title"></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div class="main_imgBox">
+
+
+<!--         <div class="main_imgBox">
             <img src="images/logo_top.png" alt=" " class="main_logo" />
                 <div class="main_img" style="background-image: url(images/top_1.png)"></div>
                 <div class="main_img" style="background-image: url(images/top_2.png)"></div>
@@ -42,7 +145,7 @@
                 <div class="main_img" style="background-image: url(images/top_6.png)"></div>
           </div>
           <!--ここまで画像のアニメーション追加-->
-
+--> 
 
 
 
@@ -60,23 +163,13 @@
               <h3 style="text-align:center;">From office worker </h3>
         <!--小さな端末用（800px以下端末）メニュー-->
                 <nav id="menubar-m">
-                  <ul id="clip-box-b">
+                    <ul>
                     <!--<li><img src="images/masashi_profile.png" alt="レオ画像"><span>Message for Reo</span></a></li>-->
                     <li><img src="images/sample.jpg" alt="" /><span>名前</span></li>
                     <li><a class="zoom" href="images/manami_highschool/m_terasita.jpg"><img src="images/tegami.jpg" alt="" /><span>Click</span></a></li>
                     <li><a class="zoom" href="images/manami_highschool/frame_m_moto.jpg"><img src="images/tegami.jpg" alt="" /><span>Click</span></a></li>
                     <li><img src="images/manami_highschool/terashima.jpg" alt="" /><span>名前</span></li>
-                    <li><a class="zoom" href="images/manami_highschool/frame_m_moto_1.jpg"><img src="images/tegami.jpg" alt="" /><span>Click</span></a></li>
-                    <li><img src="images/reika_profile.png" alt="" /><span>名前</span></li>
-                    <li><a class="zoom" href="images/frame_sample4.jpg"><img src="images/tegami.jpg" alt="" /><span>Click</span></a></li>
-                    <li><img src="images/manami_highschool/kimura.jpg" alt="" /><span>名前</span></li>
-                    <li><a class="zoom" href="images/350_frame.jpg"><img src="images/tegami.jpg" alt="" /><span>Click</span></a></li>
-                    <li><img src="images/manami_highschool/oku.jpg" alt="" /><span>正式</span></li>
-                    <li><a class="zoom" href="images/350_mana.jpg"><img src="images/tegami.jpg" alt="" /><span>Click</span></a></li>
-                    <li><img src="images/manami_highschool/maruyamajpg.jpg" alt="" /><span>まなみ</span></li>
-                    <li><a class="zoom" href="images/manami_highschool/350_mana.png"><img src="images/tegami.jpg" alt="" /><span>Click</span></a></li>
-                    <li><img src="images/reika_profile.png" alt="" /><span>名前</span></li>
-
+              
                   </ul>
                 </nav>
 
@@ -113,7 +206,7 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/5-9.js"></script> -->
   
-
+  <script src="js/top.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
   <script>bubbly();</script>
   <script src="js/bg.js"></script>
