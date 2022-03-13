@@ -57,10 +57,21 @@ nav#menubar ul li,
 nav#menubar-s ul li {
 	float: left;		/*メニューを左側に回り込み*/
 	text-align: center;	/*内容をセンタリング*/
-	width: 28%;			/*メニュー幅*/
-	margin-left: 4%;	/*メニュー同士の隙間*/
-	font-size: 12px;	/*文字サイズ*/
+	width: 20%;			/*メニュー幅*/
+	margin-left: 3.5%;	/*メニュー同士の隙間*/
+	font-size: 16px;	/*文字サイズ*/
 }
+@media screen and (max-width:700px){
+	nav#menubar-s ul li {
+		float: left;		/*メニューを左側に回り込み*/
+		text-align: center;	/*内容をセンタリング*/
+		width: 38%;			/*メニュー幅*/
+		margin-left: 8%;	/*メニュー同士の隙間*/
+		font-size: 12px;	/*文字サイズ*/
+	}
+  }
+
+
 nav#menubar-m ul li {
 	display: inline-block; /* ここがポイント */
 	/*メニューを左側に回り込み*/
