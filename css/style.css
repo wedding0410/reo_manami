@@ -77,12 +77,32 @@ nav#menubar-m ul li {
 	/*メニューを左側に回り込み*/
 	text-align: center;	/*内容をセンタリング*/
 	padding-left: 12%;
-	width: 30%;	
+	width: 40%;	
 	z-index: 10000;		/*メニュー幅*/
-	margin-right: 15px;
-	margin-bottom: 15px;	/*メニュー同士の隙間*/
+	margin-left: 3.5%;	/*メニュー同士の隙間*/
 	font-size: 12px;	/*文字サイズ*/
 }
+
+		/*画面幅700px以下の設定
+		------------------------------------------------------------------------------------------------------------------------------------------------------*/
+		@media screen and (max-width:700px){
+		
+		 
+			nav#menubar-m ul li {
+				display: inline-block; /* ここがポイント */
+				/*メニューを左側に回り込み*/
+				text-align: center;	/*内容をセンタリング*/
+				width: 40%;	
+				z-index: 10000;		/*メニュー幅*/
+				
+				margin-left: 3.5%;	/*メニュー同士の隙間*/				font-size: 12px;	/*文字サイズ*/
+
+
+
+			}
+		}
+
+
 /*各メニューの写真部分の設定*/
 nav#menubar ul li img,
 nav#menubar-s ul li img {
@@ -107,26 +127,7 @@ nav#menubar-m ul li img {
 }
 
 
-		/*画面幅800px以下の設定
-		------------------------------------------------------------------------------------------------------------------------------------------------------*/
-		@media screen and (max-width:700px){
-		
-		 
-			nav#menubar-m ul li {
-				display: inline-block; /* ここがポイント */
-				/*メニューを左側に回り込み*/
-				text-align: center;	/*内容をセンタリング*/
-				width: 30%;	
-				z-index: 10000;		/*メニュー幅*/
-				
-    			margin-right: 15px;
-    			margin-bottom: 15px;	/*メニュー同士の隙間*/
-				font-size: 12px;	/*文字サイズ*/
 
-
-
-			}
-		}
 
 
 /*各メニューの写真部分のマウスオン時の設定*/
