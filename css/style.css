@@ -95,9 +95,8 @@ nav#menubar-m ul li {
 				width: 40%;	
 				z-index: 10000;		/*メニュー幅*/
 				
-				margin-left: 3.5%;	/*メニュー同士の隙間*/				font-size: 12px;	/*文字サイズ*/
-
-
+				margin-left: 3.5%;	/*メニュー同士の隙間*/				
+				font-size: 12px;	/*文字サイズ*/
 
 			}
 		}
