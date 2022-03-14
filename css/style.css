@@ -113,8 +113,8 @@ nav#menubar-m ul li {
 		nav#menubar-l ul li {
 			float: left;		/*メニューを左側に回り込み*/
 			text-align: center;	/*内容をセンタリング*/
-			width: 20%;			/*メニュー幅*/
-			margin-left: 3.5%;	/*メニュー同士の隙間*/
+			width: 26%;			/*メニュー幅*/
+			margin-left: 5.5%;	/*メニュー同士の隙間*/
 			font-size: 16px;	/*文字サイズ*/
 		}
 		
