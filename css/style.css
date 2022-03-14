@@ -150,7 +150,7 @@ nav#menubar-m ul li img {
 	width: 100%;		/*上の15%の幅に対しての写真幅*/
 	height: auto;
 	z-index:10000;
-	-webkit-box-shadow: 1px 2px 10px rgba(0,0,0,0.3);	/*影の設定。右へ、下へ、ぼかし幅。rgba以降の3つの数字がRGBでの色（この場合は黒）。最後の小数点の数字が透明度30%の事。*/
+	-webkit-box-shadow: 1px 2px 10px rgba(253, 247, 247, 0.3);	/*影の設定。右へ、下へ、ぼかし幅。rgba以降の3つの数字がRGBでの色（この場合は黒）。最後の小数点の数字が透明度30%の事。*/
 	border: 1px solid #FFF;	/*枠線の幅、線種、色*/
 	border-radius: 0%;		/*角丸の設定*/
 	margin-bottom: 5px;	/*写真とメニューテキストの間にとるスペース*/
@@ -176,9 +176,7 @@ nav#menubar ul li:hover img,
 nav#menubar-s ul li:hover img {
 	border: 7px solid #FF3;	/*枠線の幅、線種、色*/
 }
-nav#menubar-l ul li:hover img {
-	border: 7px solid #FF3;	/*枠線の幅、線種、色*/
-}
+
 
 nav#menubar-l ul li:hover img {
 	border: 7px solid #FF3;	/*枠線の幅、線種、色*/
@@ -193,7 +191,7 @@ nav#menubar-s ul li a {
 }
 nav#menubar-m ul li a {
 	text-decoration: none;
-	color: rgb(7, 7, 7);	/*文字色*/
+	color: rgb(15, 15, 15);	/*文字色*/
 }
 nav#menubar-l ul li a {
 	text-decoration: none;
@@ -215,7 +213,7 @@ nav#menubar-m ul li span {
 	word-wrap: break-word;
 	border-radius: 100px;	/*角丸の設定。大き目に設定しておけばOK。*/
 	line-height: 1;			/*高さ*/
-	background: rgba(187, 184, 184, 0.3);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
+	background: rgba(250, 249, 249, 0.938);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
 	margin-bottom: 30px;	/*下のコンテンツブロックとの余白*/
 	padding: 4px;
 }
@@ -236,6 +234,10 @@ nav#menubar ul li a:hover span,
 nav#menubar-s ul li a:hover span {
 	color: #FF3;	/*文字色*/
 	background: rgba(0,0,0,0.6);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは60%。*/
+}
+nav#menubar-m ul li a:hover span {
+	color: #FF3;	/*文字色*/
+	background: rgba(0,0,0,0.3);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは60%。*/
 }
 
 nav#menubar-l ul li a:hover span {
