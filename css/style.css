@@ -223,7 +223,7 @@ nav#menubar-l ul li a span {
 	word-wrap: break-word;
 	border-radius: 100px;	/*角丸の設定。大き目に設定しておけばOK。*/
 	line-height: 1;			/*高さ*/
-	background: rgba(187, 184, 184, 0.3);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
+	background: rgba(247, 246, 246, 0.966);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
 	margin-bottom: 30px;	/*下のコンテンツブロックとの余白*/
 	padding: 4px;
 }
@@ -296,7 +296,7 @@ nav#menubar-l ul li a:hover span {
 	font-size: 2.4ch;
 	   background-color:rgba(252, 250, 250, 0.9);
 		position: relative;
-		padding: 1em 2em;
+		padding: 0.5em 1em;
 		text-align: center;
 	  }
 	  
