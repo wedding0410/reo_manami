@@ -104,7 +104,7 @@ nav#menubar-m ul li {
 				text-align: center;	/*内容をセンタリング*/
 				width: 40%;			/*メニュー幅*/
 				margin-left: 7%;	/*メニュー同士の隙間*/
-				font-size: 16px;	/*文字サイズ*/
+				font-size: 13px;	/*文字サイズ*/
 
 			}
 		}
@@ -191,7 +191,7 @@ nav#menubar-s ul li a {
 }
 nav#menubar-m ul li a {
 	text-decoration: none;
-	color: rgb(15, 15, 15);	/*文字色*/
+	color: rgb(247, 3, 194);	/*文字色*/
 }
 nav#menubar-l ul li a {
 	text-decoration: none;
@@ -213,7 +213,7 @@ nav#menubar-m ul li span {
 	word-wrap: break-word;
 	border-radius: 100px;	/*角丸の設定。大き目に設定しておけばOK。*/
 	line-height: 1;			/*高さ*/
-	background: rgba(250, 249, 249, 0.938);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
+	background: rgba(247, 246, 246, 0.966);	/*背景色。左の3つの数字がRGBでの色。0,0,0は黒。最後の小数点の数字が透明度。ここでは30%。*/
 	margin-bottom: 30px;	/*下のコンテンツブロックとの余白*/
 	padding: 4px;
 }
