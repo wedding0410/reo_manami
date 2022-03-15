@@ -28,7 +28,7 @@
 .lum-lightbox-loader:before{left:0;animation:d 1.8s linear infinite}
 .lum-lightbox-loader:after{right:0;animation:e 1.8s linear infinite;animation-delay:-.9s}
 .lum-lightbox.lum-opening{animation:a .18s ease-out}
-/*.lum-lightbox.lum-opening */
+.lum-lightbox.lum-opening 
 .lum-lightbox-inner{animation:b .18s ease-out}
 .lum-lightbox.lum-closing{animation:a .3s ease-in;animation-direction:reverse}
 .lum-lightbox.lum-closing .lum-lightbox-inner{animation:b .3s ease-in;animation-direction:reverse}
