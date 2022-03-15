@@ -8,7 +8,7 @@ let mainSliderOptions = {
   speed:1000,
   parallax:true,
   autoplay:{
-    delay:3000
+    delay:5000
   },
   loopAdditionalSlides: 10,
   grabCursor: true,
