@@ -115,7 +115,7 @@ nav#menubar-m ul li {
 			text-align: center;	/*内容をセンタリング*/
 			width: 26%;			/*メニュー幅*/
 			margin-left: 5.5%;	/*メニュー同士の隙間*/
-			font-size: 16px;	/*文字サイズ*/
+			font-size: 13px;	/*文字サイズ*/
 		}
 		
 				/*画面幅700px以下の設定
@@ -129,7 +129,7 @@ nav#menubar-m ul li {
 						text-align: center;	/*内容をセンタリング*/
 						width: 30%;			/*メニュー幅*/
 						margin-left: 3%;	/*メニュー同士の隙間*/
-						font-size: 12px;	/*文字サイズ*/
+						font-size: 10px;	/*文字サイズ*/
 		
 					}
 				}
@@ -218,7 +218,7 @@ nav#menubar-m ul li span {
 	padding: 4px;
 }
 nav#menubar-l ul li a span {
-	font-size: 15px;
+	font-size: 12px;
 	display: block;
 	word-wrap: break-word;
 	border-radius: 100px;	/*角丸の設定。大き目に設定しておけばOK。*/
