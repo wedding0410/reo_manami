@@ -1,5 +1,7 @@
 	
 @import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 .start {
 	background-image: url(https://wedding0410.github.io/reo_manami/images/top_bg1.jpg); 
 
@@ -53,15 +55,16 @@
   font-size: 40px;
   font-family: "Hannari";
 }
+
 .start p4 {
 	position: fixed;
 	left: 50%;
-	top: 70%;
+	top: 75%;
 	transform: translate(-50%, -50%);
 	display: none;
 	z-index: 9999;
 	width: 80%;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Caveat', cursive;
 }
 
