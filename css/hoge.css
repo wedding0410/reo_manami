@@ -1,0 +1,56 @@
+	
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+.start {
+	background-image: url(https://wedding0410.github.io/reo_manami/images/top_bg.jpg); 
+  
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 80%;
+  
+}
+.start p1 {
+	position: fixed;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 80%;
+  font-size: 40px;
+  font-family: "Hannari";
+}
+.start p2 {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 80%;
+  font-size: 40px;
+  font-family: "Hannari";
+}
+.start p3 {
+	position: fixed;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 80%;
+  font-size: 40px;
+  font-family: "Hannari";
+}
+
