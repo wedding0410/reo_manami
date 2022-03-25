@@ -5,10 +5,10 @@ let mainSliderSelector = '.main-slider',
 // Main Slider
 let mainSliderOptions = {
   loop: true,
-  speed:1000,
+  speed:800,
   parallax:true,
   autoplay:{
-    delay:5000
+    delay:4500
   },
   loopAdditionalSlides: 10,
   grabCursor: true,
